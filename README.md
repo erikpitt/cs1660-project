@@ -51,3 +51,11 @@
 ![](images/External_IPs.png)
 
 ![](images/Reserved_IPs.png)
+
+## Running the GUI
+
+As elaborated on in the "Important Notes" section below, I wasn't able to containerize the GUI. To run gui.py, it must be executed on your local machine. If you are running the cluster locally and want to use the GUI to view the IP addresses, type "python gui.py true". Otherwise, if you're running the cluster on my GKE, type "python gui.py false" on your local machine. The boolean corresponds to a variable IS_LOCAL that decides if you should see a local or a static Google Cloud IP address.
+
+## Important Notes
+
+I wasn't able to get the GUI to work while in a container with XQuartz. The application is set up so that the GUI is run locally and independently. The file gui.py does accept a boolean command line argument (the variable that gets assigned to it is called IS_LOCAL) so that it knows if the cluster is running on the user's local machine or on GKE. If I had successfully containerized the GUI, I would've made IS_LOCAL an environment variable--but unfortunately, I wasn't able to do that. Since I reserved all of the IPs on Google Cloud that my services use, I hardcoded those addresses into the GUI when IS_LOCAL=False because they're static.
