@@ -2,11 +2,11 @@
 
 ## Containers
 
-* [Main Application Source Code](cs1660-project-main/main.py)
-* [Main Application Docker Hub URL](https://hub.docker.com/r/erikjoy/cs1660-project-main)
-* [Apache Hadoop Docker Hub URL](https://hub.docker.com/r/sequenceiq/hadoop-docker)
-* [Apache Spark Docker Hub URL](https://hub.docker.com/r/bitnami/spark)
-* [Jupyter Notebook Docker Hub URL](https://hub.docker.com/r/jupyter/base-notebook)
+* [GUI Source Code](cs1660-project-main/gui.py)
+* [Apache Hadoop Namenode Docker Hub URL](https://hub.docker.com/layers/bde2020/hadoop-namenode/2.0.0-hadoop3.2.1-java8/images/sha256-51ad9293ec52083c5003ef0aaab00c3dd7d6335ddf495cc1257f97a272cab4c0?context=explore)
+* [Apache Hadoop Datanode Docker Hub URL](https://hub.docker.com/layers/bde2020/hadoop-datanode/2.0.0-hadoop3.2.1-java8/images/sha256-ddf6e9ad55af4f73d2ccb6da31d9e3331ffb94d5f046126db4f40aa348d484bf?context=explore)
+* [Apache Spark Docker Hub URL](https://hub.docker.com/layers/bitnami/spark/3/images/sha256-e60f9146bdce100cf518746117f84d659d352dc0fc4c0af552e05a935f5d2ae1?context=explore)
+* [Jupyter Notebook Docker Hub URL](https://hub.docker.com/r/jupyter/datascience-notebook)
 * [SonarQube Docker Hub URL](https://hub.docker.com/_/sonarqube)
 
 ## Deploying to a Local Kubernetes Cluster
