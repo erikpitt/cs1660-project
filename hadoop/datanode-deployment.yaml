@@ -28,7 +28,7 @@ spec:
             - name: SERVICE_PRECONDITION
               value: "namenode:9870"
             - name: CORE_CONF_fs_defaultFS
-              value: "hdfs://namenode:9000"
+              value: "hdfs://namenode:8020"
             - name: CORE_CONF_hadoop_http_staticuser_user
               value: "root"
             - name: CORE_CONF_hadoop_proxyuser_hue_hosts

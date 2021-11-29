@@ -26,12 +26,12 @@ spec:
           name: namenode
           ports:
             - containerPort: 9870
-            - containerPort: 9000
+            - containerPort: 8020
           env:
             - name: CLUSTER_NAME
               value: "test"
             - name: CORE_CONF_fs_defaultFS
-              value: "hdfs://namenode:9000"
+              value: "hdfs://namenode:8020"
             - name: CORE_CONF_hadoop_http_staticuser_user
               value: "root"
             - name: CORE_CONF_hadoop_proxyuser_hue_hosts

@@ -9,9 +9,9 @@ spec:
       port: 9870
       protocol: TCP
       targetPort: 9870
-    - name: "9000"
-      port: 9000
+    - name: "8020"
+      port: 8020
       protocol: TCP
-      targetPort: 9000
+      targetPort: 8020
   selector:
     app: namenode
