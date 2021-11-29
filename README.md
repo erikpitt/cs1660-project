@@ -27,7 +27,7 @@
 
 ## Pods and Services Running on Local Kubernetes Cluster
 
-![](https://github.com/erikpitt/cs1660-project/blob/c76f7219cf6631cb423cce8b914f23f599a04d28/images/Local%20Kubernetes%20Cluster.png)
+![](images/Local%20Kubernetes%20Cluster.png)
 
 ## Deploying to Google Kubernetes Engine
 
@@ -47,3 +47,7 @@
 14. Type kubectl apply -f spark/spark-service.yaml
 15. Periodically type "kubectl get service -o wide" and wait until all the loadbalancers have received an external IP.
 16. Using the search bar, navigate to External IP Addresses. Locate all of the external IP addresses of the loadbalances from the above command and reserve the four IP addresses so that they become static.
+
+![](images/External_IPs.png)
+
+![](images/Reserved_IPs.png)
