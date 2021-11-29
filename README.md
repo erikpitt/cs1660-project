@@ -59,3 +59,7 @@ As elaborated on in the "Important Notes" section below, I wasn't able to contai
 ## Important Notes
 
 I wasn't able to get the GUI to work while in a container with XQuartz. The application is set up so that the GUI is run locally and independently. The file gui.py does accept a boolean command line argument (the variable that gets assigned to it is called IS_LOCAL) so that it knows if the cluster is running on the user's local machine or on GKE. If I had successfully containerized the GUI, I would've made IS_LOCAL an environment variable--but unfortunately, I wasn't able to do that. Since I reserved all of the IPs on Google Cloud that my services use, I hardcoded those addresses into the GUI when IS_LOCAL=False because they're static.
+
+### Video Link
+
+[Video](https://www.youtube.com/watch?v=XYgXRBzjPRY)
